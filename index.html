@@ -397,6 +397,8 @@
       border: 1px solid rgba(251,250,247,.08);
       overflow: hidden;
       min-height: 100%;
+      display: flex;
+      flex-direction: column;
     }
     .mood-img {
       aspect-ratio: 4 / 3;
@@ -405,7 +407,13 @@
     }
     .mood-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
     .mood-card:hover .mood-img img { transform: scale(1.04); }
-    .mood-body { padding: 24px 22px 26px; }
+    .mood-body {
+      padding: 24px 22px 26px;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: flex-start;
+    }
     .mood-num {
       font-family: var(--font-latin);
       color: rgba(200,173,115,.75);
@@ -435,6 +443,15 @@
       color: rgba(251,250,247,.58);
       font-size: .72rem;
     }
+    .mood-buy {
+      margin-top: auto;
+      width: 100%;
+      min-height: 46px;
+      padding: 11px 14px;
+      font-size: .86rem;
+      letter-spacing: .05em;
+    }
+    .mood-badge + .mood-buy { margin-top: 18px; }
 
     .product-panel {
       display: grid;
@@ -930,45 +947,50 @@
           <div class="mood-img"><img src="images/mori-no-shizuku/01.jpg" alt="森のしずくの色合わせ例"></div>
           <div class="mood-body">
             <div class="mood-num">01</div>
-            <h3 class="mood-title">森のしずく</h3>
-            <p>森の中の空気を含んだような、静かな色合わせ。青み、淡色、やわらかな影色を組み合わせてお届けします。</p>
-            <span class="mood-badge">静かな草木の気配</span>
+            <h3 class="mood-title">森と花のしずく</h3>
+            <p>藍の青、ヨモギの草色、マリーゴールドの黄色を合わせた、自然の気配を感じる色合わせ。静かな森に花の色がひとしずく落ちたような、やさしい印象を楽しみたい方へ。</p>
+            <span class="mood-badge">やさしい自然の気配</span>
+            <a href="https://square.link/u/KM66Saf8" class="btn btn-primary mood-buy" data-cta-name="square_purchase_mood_01" data-cta-type="purchase" data-cta-location="mood_mori_to_hana_no_shizuku">クレカで購入</a>
           </div>
         </article>
         <article class="mood-card reveal delay1">
           <div class="mood-img"><img src="images/aozora-no-kioku/01.jpg" alt="青空の記憶の色合わせ例"></div>
           <div class="mood-body">
             <div class="mood-num">02</div>
-            <h3 class="mood-title">青空の記憶</h3>
-            <p>澄んだ青や淡いグリーンを感じる、爽やかな色合わせ。空の明るさと草木のやさしさを楽しむセットです。</p>
-            <span class="mood-badge">青と緑の余韻</span>
+            <h3 class="mood-title">空と実りの記憶</h3>
+            <p>藍の青に、びわのやわらかな黄み、オリーブの落ち着いた色を合わせた色合わせ。空の明るさと木の実りが重なるような、穏やかな印象を楽しみたい方へ。</p>
+            <span class="mood-badge">穏やかな空と実り</span>
+            <a href="https://square.link/u/KM66Saf8" class="btn btn-primary mood-buy" data-cta-name="square_purchase_mood_02" data-cta-type="purchase" data-cta-location="mood_sora_to_minori_no_kioku">クレカで購入</a>
           </div>
         </article>
         <article class="mood-card reveal delay2">
           <div class="mood-img"><img src="images/haru-no-hikari/01.jpg" alt="春のひかりの色合わせ例"></div>
           <div class="mood-body">
             <div class="mood-num">03</div>
-            <h3 class="mood-title">春のひかり</h3>
-            <p>黄色や淡い青、やわらかな緑など、春の日差しを思わせる軽やかな色合わせでお届けします。</p>
-            <span class="mood-badge">明るく軽やかな印象</span>
+            <h3 class="mood-title">藍に咲く春</h3>
+            <p>藍の青を中心に、藍のかけあわせやマリーゴールドの明るさを重ねた色合わせ。青の中に春の花がふわりと咲くような、軽やかな印象を楽しみたい方へ。</p>
+            <span class="mood-badge">藍に花咲く軽やかさ</span>
+            <a href="https://square.link/u/KM66Saf8" class="btn btn-primary mood-buy" data-cta-name="square_purchase_mood_03" data-cta-type="purchase" data-cta-location="mood_ai_ni_saku_haru">クレカで購入</a>
           </div>
         </article>
         <article class="mood-card reveal delay3">
           <div class="mood-img"><img src="images/tsuki-akari/01.jpg" alt="月あかりの色合わせ例"></div>
           <div class="mood-body">
             <div class="mood-num">04</div>
-            <h3 class="mood-title">月あかり</h3>
-            <p>白に近い淡色、灰み、やわらかな黄みなど、静かな光を感じる落ち着いた色合わせです。</p>
-            <span class="mood-badge">淡く静かな色合わせ</span>
+            <h3 class="mood-title">淡月のひかり</h3>
+            <p>マリーゴールドのやわらかな黄み、びわの淡い色、藍の静かな青を合わせた色合わせ。月あかりのように淡く、穏やかな余韻を楽しみたい方へ。</p>
+            <span class="mood-badge">淡く穏やかな余韻</span>
+            <a href="https://square.link/u/KM66Saf8" class="btn btn-primary mood-buy" data-cta-name="square_purchase_mood_04" data-cta-type="purchase" data-cta-location="mood_tangetsu_no_hikari">クレカで購入</a>
           </div>
         </article>
         <article class="mood-card reveal delay1">
           <div class="mood-img"><img src="images/no-no-irodori/01.jpg" alt="野の彩りの色合わせ例"></div>
           <div class="mood-body">
             <div class="mood-num">05</div>
-            <h3 class="mood-title">野の彩り</h3>
-            <p>藍、黄色、淡色などが並ぶ、野の草花のような楽しい色合わせ。少し華やかな雰囲気を楽しみたい方へ。</p>
-            <span class="mood-badge">草花のような彩り</span>
+            <h3 class="mood-title">野草の余韻</h3>
+            <p>藍のかけあわせに、ローズマリーの草色と銅媒染の深みを重ねた色合わせ。野に残る草の香りや影色のような、渋く落ち着いた余韻を楽しみたい方へ。</p>
+            <span class="mood-badge">渋く落ち着いた余韻</span>
+            <a href="https://square.link/u/KM66Saf8" class="btn btn-primary mood-buy" data-cta-name="square_purchase_mood_05" data-cta-type="purchase" data-cta-location="mood_yasou_no_yoin">クレカで購入</a>
           </div>
         </article>
       </div>
