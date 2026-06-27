@@ -10,11 +10,11 @@
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>初夏の草木染めサラシ 選べる5つの色合わせ便｜刺し子どり</title>
-  <meta name="description" content="藍染めやマリーゴールド、重ね染めで生まれたグリーンなどを、刺し子どりが3枚ずつ色合わせしてお届けする草木染めサラシの色合わせ便。写真は一例、細かな色指定は承っておりません。3枚セット2,000円。">
+  <title>完売｜初夏の草木染めサラシ 選べる5つの色合わせ便｜刺し子どり</title>
+  <meta name="description" content="初夏の草木染めサラシ 選べる5つの色合わせ便は、すべて完売いたしました。藍染めやマリーゴールド、重ね染めで生まれたグリーンなどを3枚ずつ色合わせした限定便です。">
 
-  <meta property="og:title" content="初夏の草木染めサラシ 選べる5つの色合わせ便｜刺し子どり">
-  <meta property="og:description" content="藍・マリーゴールド・グラデーション・おまかせから大まかな色合わせ便を選び、3枚の組み合わせは刺し子どりにおまかせでお届けします。">
+  <meta property="og:title" content="完売｜初夏の草木染めサラシ 選べる5つの色合わせ便｜刺し子どり">
+  <meta property="og:description" content="初夏の草木染めサラシ 選べる5つの色合わせ便は、すべて完売いたしました。ありがとうございました。">
   <meta property="og:type" content="website">
   <!-- 公開URLが決まったら、og:url と og:image は絶対URLに差し替えてください。
        例：<meta property="og:url" content="https://example.com/kusakizome_iroawase_bin_lp.html">
@@ -224,6 +224,19 @@
       font-size: .88rem;
       color: rgba(251,250,247,.75);
     }
+    .soldout-banner {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(200,173,115,.58);
+      background: rgba(10,17,22,.62);
+      color: var(--c-gold);
+      font-family: var(--font-serif);
+      font-weight: 800;
+      letter-spacing: .12em;
+    }
     .hero-actions, .cta-actions {
       display: flex;
       gap: 14px;
@@ -250,6 +263,14 @@
     .btn-primary:hover { background: var(--c-blue); }
     .btn-line { background: var(--c-line); color: #fff; box-shadow: 0 16px 34px rgba(6,199,85,.24); }
     .btn-ghost { border-color: rgba(251,250,247,.18); background: rgba(251,250,247,.05); color: rgba(251,250,247,.86); }
+    .btn-soldout {
+      background: rgba(251,250,247,.11);
+      border-color: rgba(200,173,115,.5);
+      color: rgba(251,250,247,.78);
+      cursor: default;
+      box-shadow: none;
+    }
+    .btn-soldout:hover { transform: none; }
     .price {
       font-family: var(--font-latin);
       font-size: 2rem;
@@ -444,6 +465,23 @@
       letter-spacing: .05em;
     }
     .mood-badge + .mood-buy { margin-top: 18px; }
+    .mood-soldout {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: auto;
+      width: 100%;
+      min-height: 46px;
+      padding: 11px 14px;
+      border: 1px solid rgba(200,173,115,.44);
+      background: rgba(251,250,247,.08);
+      color: rgba(251,250,247,.72);
+      font-family: var(--font-serif);
+      font-size: .86rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+    .mood-badge + .mood-soldout { margin-top: 18px; }
 
     .product-panel {
       display: grid;
@@ -576,7 +614,8 @@
       transition: all .5s var(--ease);
     }
     .sticky.show { opacity: 1; transform: translateY(0); }
-    .sticky a {
+    .sticky a,
+    .sticky span {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -590,6 +629,7 @@
       box-shadow: 0 13px 32px rgba(0,0,0,.26);
     }
     .sticky .buy { background: var(--c-indigo); }
+    .sticky .soldout { background: rgba(22,26,24,.92); border: 1px solid rgba(200,173,115,.5); }
     .sticky .line { background: var(--c-line); }
 
     .view-category-grid {
@@ -845,7 +885,7 @@
       .product-list li { grid-template-columns: 1fr; gap: 4px; }
       .bonus-preview-grid { grid-template-columns: repeat(2, 1fr); }
       .sticky { left: 16px; right: 16px; bottom: 16px; }
-      .sticky a { min-width: 0; width: 100%; }
+      .sticky a, .sticky span { min-width: 0; width: 100%; }
     }
   </style>
 </head>
@@ -861,24 +901,25 @@
 
   <header class="site-header">
     <div class="logo">刺し子どり</div>
-    <div class="header-price">IROAWASE BIN　¥2,000</div>
+    <div class="header-price">IROAWASE BIN　SOLD OUT</div>
   </header>
 
   <section class="hero">
     <div class="hero-img"><img src="images/iroawase-hero.jpg" alt="藍とグリーンの草木染めサラシ3枚セット"></div>
     <div class="hero-body">
+      <div class="soldout-banner">全色合わせ便 完売しました</div>
       <div class="eyebrow">Sashikodori Natural Dye Collection</div>
       <h1><em>indigo · marigold · one of a kind</em>選べる5つの<br>色合わせ便</h1>
       <p class="hero-sub">
         藍染め、マリーゴールド、重ね染めで生まれたグリーン。<br>
-        大まかな色合わせ便を選んで、3枚の組み合わせは刺し子どりにおまかせでお届けします。
+        初夏の草木染めサラシ色合わせ便は、すべて完売いたしました。ありがとうございました。
       </p>
       <div class="hero-note">
-        <strong>3枚セット 2,000円（税込）</strong>
-        <span>写真は一例です。細かな色指定・濃淡指定は承っておりません。届くまでの一期一会をお楽しみください。</span>
+        <strong>完売御礼</strong>
+        <span>3枚セット 2,000円（税込）の限定便は完売しました。次回のお知らせをご希望の方はLINEよりお問い合わせください。</span>
       </div>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#purchase" data-cta-name="hero_purchase_anchor" data-cta-type="internal" data-cta-location="hero">購入する</a>
+        <span class="btn btn-soldout" aria-disabled="true">完売しました</span>
         <a class="btn btn-ghost" href="#moods" data-cta-name="hero_view_moods" data-cta-type="internal" data-cta-location="hero">5つの色合わせ便を見る</a>
         <div class="price">¥2,000 <small>税込</small></div>
       </div>
@@ -909,15 +950,16 @@
         <div class="eyebrow">Important Rule</div>
         <h2 class="section-title">色合わせ便について</h2>
         <p class="section-lead">
-          今回は「森と花のしずく」「空と実りの記憶」「藍に咲く春」「淡月のひかり」「野草の余韻」の5つの色合わせ便からお選びいただけます。ただし、1枚ごとの色指定や濃淡指定、組み合わせのご希望は承っておりません。写真はすべて一例です。実際のお届けは、それぞれの雰囲気に合わせて刺し子どりが3枚を組み合わせます。
+          「森と花のしずく」「空と実りの記憶」「藍に咲く春」「淡月のひかり」「野草の余韻」の5つの色合わせ便は、すべて完売いたしました。以下の内容は、今回お届けしていた色合わせ便の記録としてご覧ください。
         </p>
       </div>
       <div class="notice-box reveal delay1" style="color:var(--c-white); background:linear-gradient(135deg, rgba(29,63,89,.95), rgba(111,133,108,.72));">
-        <h3>ご購入前に必ずご確認ください</h3>
+        <h3>販売時のご案内</h3>
         <ul>
           <li>写真は組み合わせの一例です。写真と同じ3枚が届くわけではありません。</li>
           <li>細かな色指定、濃いめ・淡めなどのご希望、組み合わせ指定は承っておりません。</li>
-          <li>各色合わせ便の条件を満たしたうえで、3枚の色合わせは刺し子どりにおまかせください。</li>
+          <li>今回の販売分はすべて完売いたしました。</li>
+          <li>各色合わせ便の条件を満たしたうえで、3枚の色合わせは刺し子どりにおまかせいただく内容でした。</li>
           <li>草木染めのため、色むら・濃淡・個体差があります。</li>
           <li>水通し済みですが、最初のうちは色移りにご注意ください。</li>
         </ul>
@@ -931,7 +973,7 @@
         <div class="eyebrow">Iroawase Bin</div>
         <h2 class="section-title">選べる5つの色合わせ便</h2>
         <p class="section-lead">
-          大まかな色の方向だけお選びいただけます。写真はそれぞれ一例です。実際の3枚の組み合わせは、各色合わせ便の条件に合わせてこちらでお選びします。
+          今回の販売分は完売しました。写真はそれぞれ一例です。各色合わせ便の雰囲気の記録としてご覧ください。
         </p>
       </div>
       <div class="mood-grid mood-grid-5">
@@ -941,7 +983,7 @@
             <h3 class="mood-title">森と花のしずく</h3>
             <p>藍の青、ヨモギの草色、マリーゴールドの黄色を合わせた、自然の気配を感じる色合わせ。静かな森に花の色がひとしずく落ちたような、やさしい印象を楽しみたい方へ。</p>
             <span class="mood-badge">やさしい自然の気配</span>
-            <a href="https://square.link/u/KM66Saf8" class="btn btn-primary mood-buy" data-cta-name="square_purchase_mood_01" data-cta-type="purchase" data-cta-location="mood_mori_to_hana_no_shizuku">クレカで購入</a>
+            <span class="mood-soldout" aria-disabled="true">完売しました</span>
           </div>
         </article>
         <article class="mood-card reveal delay1">
@@ -950,7 +992,7 @@
             <h3 class="mood-title">空と実りの記憶</h3>
             <p>藍の青に、びわのやわらかな黄み、オリーブの落ち着いた色を合わせた色合わせ。空の明るさと木の実りが重なるような、穏やかな印象を楽しみたい方へ。</p>
             <span class="mood-badge">穏やかな空と実り</span>
-            <a href="https://square.link/u/KM66Saf8" class="btn btn-primary mood-buy" data-cta-name="square_purchase_mood_02" data-cta-type="purchase" data-cta-location="mood_sora_to_minori_no_kioku">クレカで購入</a>
+            <span class="mood-soldout" aria-disabled="true">完売しました</span>
           </div>
         </article>
         <article class="mood-card reveal delay2">
@@ -959,7 +1001,7 @@
             <h3 class="mood-title">藍に咲く春</h3>
             <p>藍の青を中心に、藍のかけあわせやマリーゴールドの明るさを重ねた色合わせ。青の中に春の花がふわりと咲くような、軽やかな印象を楽しみたい方へ。</p>
             <span class="mood-badge">藍に花咲く軽やかさ</span>
-            <a href="https://square.link/u/KM66Saf8" class="btn btn-primary mood-buy" data-cta-name="square_purchase_mood_03" data-cta-type="purchase" data-cta-location="mood_ai_ni_saku_haru">クレカで購入</a>
+            <span class="mood-soldout" aria-disabled="true">完売しました</span>
           </div>
         </article>
         <article class="mood-card reveal delay3">
@@ -968,7 +1010,7 @@
             <h3 class="mood-title">淡月のひかり</h3>
             <p>マリーゴールドのやわらかな黄み、びわの淡い色、藍の静かな青を合わせた色合わせ。淡月のひかりのように淡く、穏やかな余韻を楽しみたい方へ。</p>
             <span class="mood-badge">淡く穏やかな余韻</span>
-            <a href="https://square.link/u/KM66Saf8" class="btn btn-primary mood-buy" data-cta-name="square_purchase_mood_04" data-cta-type="purchase" data-cta-location="mood_tangetsu_no_hikari">クレカで購入</a>
+            <span class="mood-soldout" aria-disabled="true">完売しました</span>
           </div>
         </article>
         <article class="mood-card reveal delay1">
@@ -977,7 +1019,7 @@
             <h3 class="mood-title">野草の余韻</h3>
             <p>藍のかけあわせに、ローズマリーの草色と銅媒染の深みを重ねた色合わせ。野に残る草の香りや影色のような、渋く落ち着いた余韻を楽しみたい方へ。</p>
             <span class="mood-badge">渋く落ち着いた余韻</span>
-            <a href="https://square.link/u/KM66Saf8" class="btn btn-primary mood-buy" data-cta-name="square_purchase_mood_05" data-cta-type="purchase" data-cta-location="mood_yasou_no_yoin">クレカで購入</a>
+            <span class="mood-soldout" aria-disabled="true">完売しました</span>
           </div>
         </article>
       </div>
@@ -986,7 +1028,8 @@
         <ul>
           <li>5つの分類名は、届く3枚の「大まかな雰囲気」を表しています。</li>
           <li>写真は各色合わせ便の一例です。同じ3枚が届くわけではありません。</li>
-          <li>各分類の雰囲気に合わせて、刺し子どりが3枚を組み合わせます。</li>
+          <li>今回の販売分はすべて完売いたしました。</li>
+          <li>各分類の雰囲気に合わせて、刺し子どりが3枚を組み合わせる販売内容でした。</li>
           <li>細かな色指定、濃淡指定、組み合わせ指定は承っておりません。</li>
         </ul>
       </div>
@@ -999,7 +1042,7 @@
       <div class="natural-notice-panel reveal">
         <div class="natural-notice-title">
           <div class="eyebrow">Natural Dye Notice</div>
-          <h2>天然染料・手染め品について<br><strong>ご購入前にご確認ください</strong></h2>
+          <h2>天然染料・手染め品について<br><strong>販売時のご案内</strong></h2>
         </div>
         <ul class="natural-notice-list">
           <li>
@@ -1034,21 +1077,21 @@
       <div class="product-info">
         <div class="eyebrow">Product</div>
         <h2>初夏の草木染めサラシ<br>選べる5つの色合わせ便</h2>
-        <p style="color:rgba(251,250,247,.72); font-weight:300;">森と花のしずく・空と実りの記憶・藍に咲く春・淡月のひかり・野草の余韻から、大まかな色合わせ便を選んでいただく3枚セットです。刺し子や小物づくりにお使いいただけます。</p>
+        <p style="color:rgba(251,250,247,.72); font-weight:300;">森と花のしずく・空と実りの記憶・藍に咲く春・淡月のひかり・野草の余韻から、大まかな色合わせ便を選んでいただく3枚セットは完売いたしました。たくさんのご注文、ありがとうございました。</p>
         <ul class="product-list">
           <li><span>内容</span><span>草木染めサラシ 3枚 / 色合わせ便</span></li>
           <li><span>価格</span><span>2,000円（税込）</span></li>
           <li><span>サイズ</span><span>約33cm × 約70cm / 1枚あたり</span></li>
           <li><span>素材</span><span>綿100%</span></li>
           <li><span>種類</span><span>森と花のしずく / 空と実りの記憶 / 藍に咲く春 / 淡月のひかり / 野草の余韻</span></li>
-          <li><span>販売数</span><span>数量限定・なくなり次第終了</span></li>
+          <li><span>販売状況</span><span>完売しました</span></li>
         </ul>
         <div class="important">
-          写真は一例です。各色合わせ便の条件を満たしたうえで、実際のお届け内容はおまかせとなります。細かな色指定・濃淡指定・組み合わせのご希望は承っておりません。
+          今回の販売分はすべて完売いたしました。次回販売や再入荷のお知らせをご希望の方は、LINEよりお問い合わせください。
         </div>
         <div class="cta-actions">
-          <a href="https://square.link/u/KM66Saf8" class="btn btn-primary" data-cta-name="square_purchase" data-cta-type="purchase" data-cta-location="product_section">クレジットカードで購入</a>
-          <a href="https://lin.ee/pE4BazH" class="btn btn-line" target="_blank" rel="noopener" data-cta-name="line_inquiry" data-cta-type="line" data-cta-location="product_section">振込・メルカリ希望はLINEへ</a>
+          <span class="btn btn-soldout" aria-disabled="true">完売しました</span>
+          <a href="https://lin.ee/pE4BazH" class="btn btn-line" target="_blank" rel="noopener" data-cta-name="line_inquiry" data-cta-type="line" data-cta-location="product_section">次回のお知らせ希望はLINEへ</a>
         </div>
       </div>
     </div>
@@ -1059,7 +1102,7 @@
       <div class="bonus-card">
         <div class="eyebrow">Purchase Privilege</div>
         <h2>特別プレゼント：刺し子下図データ 5種</h2>
-        <p>ご購入者様全員に、刺し子どり亭主厳選の「5種類のトレース用下図データ（PDF）」を差し上げます。そのまま印刷して、すぐ下図としてお使いいただけます。</p>
+        <p>今回のご購入者様全員に、刺し子どり亭主厳選の「5種類のトレース用下図データ（PDF）」を差し上げます。そのまま印刷して、すぐ下図としてお使いいただけます。</p>
         <div class="bonus-patterns">
           <span class="pattern-pill">七宝つなぎ</span>
           <span class="pattern-pill">青海波</span>
@@ -1167,8 +1210,8 @@
   </footer>
 
   <div class="sticky" id="sticky">
-    <a class="buy" href="https://square.link/u/KM66Saf8" data-cta-name="sticky_square_purchase" data-cta-type="purchase" data-cta-location="sticky">🛒 クレカで購入</a>
-    <a class="line" href="https://lin.ee/pE4BazH" target="_blank" rel="noopener" data-cta-name="sticky_line_inquiry" data-cta-type="line" data-cta-location="sticky">💬 LINEで相談</a>
+    <span class="soldout" aria-disabled="true">完売しました</span>
+    <a class="line" href="https://lin.ee/pE4BazH" target="_blank" rel="noopener" data-cta-name="sticky_line_inquiry" data-cta-type="line" data-cta-location="sticky">LINEで次回案内</a>
   </div>
 
   <div class="gallery-modal" id="gallery-modal" aria-hidden="true">
